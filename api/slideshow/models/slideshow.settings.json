@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slideshows",
+  "info": {
+    "name": "slideshow"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "published": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "creator": {
+      "type": "string"
+    },
+    "artworks": {
+      "collection": "artwork"
+    }
+  }
+}

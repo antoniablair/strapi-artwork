@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artworks",
+  "info": {
+    "name": "artwork"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "published": {
+      "type": "boolean"
+    },
+    "media": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}
