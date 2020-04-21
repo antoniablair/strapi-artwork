@@ -5,7 +5,7 @@ Run yarn install and yarn develop / yarn start to kick off the application. By d
 you can set up MYSQL or PostgreSQL for production. 
 
 If running in development mode, visit localhost:1337/admin and you will be prompted to create an initial administrator user. 
-You should now be able to login to an admin panel. 
+You should now be able to login to an admin panel at localhost:1337/admin .
 
 Go into Roles & Permissions and select Public. This is where you can change which users have access to which API endpoints,
 or make API endpoints public. 
